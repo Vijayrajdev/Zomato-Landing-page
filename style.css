@@ -25,13 +25,14 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
   background-image: linear-gradient(
     to right,
     #ff512f 0%,
     #dd2476 51%,
     #ff512f 100%
   );
-  border-radius: 20px 20px 0 0 ;
+  border-radius: 20px 20px 0 0;
 }
 
 footer > img {
@@ -41,11 +42,18 @@ footer > img {
 
 footer > ul {
   list-style: none;
+  margin-top: -2rem;
 }
 
 footer > ul > li {
   color: #fff;
-  margin-top: 0.4rem;
+  margin: 0.4rem;
+}
+
+footer > p {
+  text-align: center;
+  margin: 1rem;
+  color: aliceblue;
 }
 
 .container {
@@ -127,7 +135,7 @@ footer > ul > li {
 .text__heading {
   font-size: 1.8rem;
   line-height: 2.25rem;
-  color: #1d3537;
+  color: #1d3557;
   font-weight: bold;
 }
 
@@ -167,7 +175,7 @@ footer > ul > li {
 
 .video__footage__text {
   margin-top: 2rem;
-  color: #1d3537;
+  color: #1d3557;
   font-size: 1.25rem;
   font-weight: 300;
   text-align: center;
@@ -182,7 +190,7 @@ footer > ul > li {
 .text__heading {
   font-size: 1.8rem;
   line-height: 2.25rem;
-  color: #1d3537;
+  color: #1d3557;
   font-weight: bold;
 }
 
@@ -190,23 +198,23 @@ footer > ul > li {
   background-color: #fff;
   width: 100%;
   border-radius: 6px;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
 }
 
 .food__menu__card__image {
   width: 100%;
   border-radius: 6px 6px 0 0;
- box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
 }
 
 .food__menu__card__title {
   font-size: 1.25rem;
   font-weight: 700;
-  color: #1d3537;
+  color: #1d3557;
   margin: 0.5rem 0;
 }
 
 .food__menu__card__restaurants {
-  color: #1d3537;
+  color: #1d3557;
 }
 
 .food__menu__card__description {
@@ -329,6 +337,14 @@ footer > ul > li {
     font-weight: 900;
   }
 
+  .video__footage {
+    margin-right: 2rem;
+  }
+
+  .video__footage__text {
+    margin-left: 2rem;
+  }
+
   .food__list__container {
     margin: 5rem 0;
   }
@@ -399,9 +415,14 @@ footer > ul > li {
     margin: 0 1rem;
     z-index: 3;
   }
+
   footer {
     flex-direction: row;
     justify-content: space-evenly;
+  }
+
+  footer > ul {
+    margin-top: 0;
   }
 }
 @media (min-width: 1024px) {
@@ -430,6 +451,10 @@ footer > ul > li {
   .text__heading {
     font-size: 3rem;
     line-height: 3.2rem;
+  }
+
+  .video__footage__container {
+    flex-direction: column;
   }
 
   .video__footage__text {
